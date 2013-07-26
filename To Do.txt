@@ -1,0 +1,10 @@
++++ Fix player movement out of bounds error
++Item Drops
+
++ Fix bug that if there is more water or mtns to be placed than space available an infinite loop would occur
++ Make the player placement random
++ Make the save fucntion save the map
++ Make a seperate monster class
++ Fix bug of the mountains being placed over rivers
+
++Implement more in depth attributes
