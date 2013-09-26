@@ -16,19 +16,19 @@ public:
 	~Player();
 	
 	//Display
-	virtual void view_inventory() const;
-	virtual void view_attributes() const;
-	virtual void view_map() const;
+	void view_inventory() const;
+	void view_attributes() const;
+	void view_map() const;
 
 	//Player development
-	virtual void level_up();
+	void level_up();
 
 	//World interaction
-	virtual char action();
-	virtual void take_step();
+	char action();
+	void take_step();
 
 	//Accessors
-	virtual Inventory* get_inventory() const;
+	Inventory* get_inventory() const;
 	vector<int> get_loc() const;
 
 	//Mutators

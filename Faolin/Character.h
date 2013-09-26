@@ -35,17 +35,6 @@ public:
 	string get_status() const;
 	string get_name() const;
 
-	//Purely virtual functions to be inherited
-
-	//For Player
-	virtual void take_step() = 0;
-	virtual void view_attributes() const = 0;
-	virtual void view_inventory() const = 0;
-	virtual Inventory* get_inventory() const = 0;
-	virtual void level_up() = 0;
-	virtual char action() = 0;
-	virtual void view_map() const = 0;
-
 private:
 	int exp;
 	int level;

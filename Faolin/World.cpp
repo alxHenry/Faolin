@@ -5,7 +5,7 @@
 using namespace std;
 
 //Density are integers between 0 and 100
-World::World(int enemy_density_in, int gift_density_in, Character* user_in, Player* player_in, SaveFile* save_in)
+World::World(int enemy_density_in, int gift_density_in, Player* user_in, Player* player_in, SaveFile* save_in)
 {
 	enemy_density = enemy_density_in;
 	gift_density = gift_density_in;
@@ -23,7 +23,7 @@ World::World(int enemy_density_in, int gift_density_in, Character* user_in, Play
 World::~World()
 {}
 
-void World::give_gift(Character* user_in)
+void World::give_gift(Player* user_in)
 {
 	//Random int between 0 and 999
 	int prob = rand() % 1000;
@@ -59,7 +59,7 @@ void World::give_gift(Character* user_in)
 	}
 }
 
-void World::battle(Character* oppo)
+void World::battle(Player* oppo)
 {
 	bool user_dead = false;
 	bool oppo_dead = false;
